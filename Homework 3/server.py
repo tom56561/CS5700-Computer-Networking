@@ -1,5 +1,8 @@
+# Po-Shen Lee
 # server.py
+
 import socket
+
 
 def start_server():
     server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -28,6 +31,7 @@ def start_server():
         print(f"Sent result: {result}")
 
         conn.close()
+
 
 if __name__ == "__main__":
     start_server()

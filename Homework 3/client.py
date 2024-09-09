@@ -1,6 +1,9 @@
+# Po-Shen Lee
 # client.py
+
 import socket
 import sys
+
 
 def send_integer_to_server(integer):
     client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -15,9 +18,9 @@ def send_integer_to_server(integer):
 
     client_socket.close()
 
+
 if __name__ == "__main__":
     if len(sys.argv) != 2:
-        print("Usage: python client.py <integer>")
         sys.exit(1)
 
     try:
@@ -28,5 +31,4 @@ if __name__ == "__main__":
         send_integer_to_server(integer)
 
     except ValueError:
-        print("Please provide a valid integer.")
         sys.exit(1)
