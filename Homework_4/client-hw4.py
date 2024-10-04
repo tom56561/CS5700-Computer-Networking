@@ -1,5 +1,8 @@
+# Po-Shen Lee
+
 import http.client
 import sys
+
 
 def get_resource(resource):
     # Establish connection to the server
